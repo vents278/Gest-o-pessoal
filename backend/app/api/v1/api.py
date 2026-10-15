@@ -1,0 +1,23 @@
+from fastapi import APIRouter
+from .routers import auth, users, incomes, expenses, dashboard, cards, recurrencias, budgets, payables, calendar, goals, debts, projections, alerts, reports, imports, reconcile, exports, backup
+
+api_router = APIRouter()
+api_router.include_router(auth.router)
+api_router.include_router(users.router)
+api_router.include_router(incomes.router)
+api_router.include_router(expenses.router)
+api_router.include_router(dashboard.router)
+api_router.include_router(cards.router)
+api_router.include_router(recurrencias.router)
+api_router.include_router(budgets.router)
+api_router.include_router(payables.router)
+api_router.include_router(calendar.router)
+api_router.include_router(goals.router)
+api_router.include_router(debts.router)
+api_router.include_router(projections.router)
+api_router.include_router(alerts.router)
+api_router.include_router(reports.router)
+api_router.include_router(imports.router)
+api_router.include_router(reconcile.router)
+api_router.include_router(exports.router)
+api_router.include_router(backup.router)
