@@ -1,1 +1,26 @@
-<div></div>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-header"><span class="logo">Rita & Jean</span><span class="subtitle">Finance</span></div>
+    <nav class="sidebar-nav">
+      <a class="nav-link active" href="#/dashboard">Dashboard</a>
+      <a class="nav-link" href="#/incomes">Receitas</a>
+      <a class="nav-link" href="#/expenses">Despesas</a>
+      <a class="nav-link" href="#/login" id="logout-link">Sair</a>
+    </nav>
+  </aside>
+  <main class="content-area">
+    <header class="topbar">
+      <h2>Dashboard</h2>
+      <div class="topbar-group"><div class="topbar-user"><span class="name" id="user-name">Carregando...</span><span class="email" id="user-email"></span></div></div>
+    </header>
+    <section class="page">
+      <div class="card-grid">
+        <article class="kpi-card"><span class="kpi-label">Receita total do casal</span><span class="kpi-value" id="kpi-receita-total">R$ 0,00</span></article>
+        <article class="kpi-card"><span class="kpi-label">Minha receita</span><span class="kpi-value" id="kpi-receita-individual">R$ 0,00</span></article>
+        <article class="kpi-card"><span class="kpi-label">Despesas totais</span><span class="kpi-value" id="kpi-despesas-total">R$ 0,00</span></article>
+        <article class="kpi-card"><span class="kpi-label">Despesas compartilhadas</span><span class="kpi-value" id="kpi-despesas-compartilhadas">R$ 0,00</span></article>
+        <article class="kpi-card"><span class="kpi-label">Minha parte pendente</span><span class="kpi-value" id="kpi-minha-parte">R$ 0,00</span></article>
+      </div>
+    </section>
+  </main>
+</div>

@@ -1,1 +1,32 @@
-<div></div>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-header"><span class="logo">Rita & Jean</span><span class="subtitle">Finance</span></div>
+    <nav class="sidebar-nav">
+      <a class="nav-link" href="#/dashboard">Dashboard</a>
+      <a class="nav-link" href="#/incomes">Receitas</a>
+      <a class="nav-link active" href="#/expenses">Despesas</a>
+      <a class="nav-link" href="#/login" id="logout-link">Sair</a>
+    </nav>
+  </aside>
+  <main class="content-area">
+    <header class="topbar"><div><h2>Despesas</h2></div></header>
+    <section class="page">
+      <div class="card">
+        <div class="card-header"><h2>Nova despesa</h2></div>
+        <form id="expense-form" class="card-body">
+          <div class="form-grid">
+            <div class="form-field"><label>Descrição</label><input id="expense-descricao" required></div>
+            <div class="form-field"><label>Valor total (R$)</label><input id="expense-valor" type="number" step="0.01" required></div>
+            <div class="form-field"><label>Responsabilidade</label><select id="expense-responsabilidade"><option value="compartilhada">Compartilhada</option><option value="rita">Rita</option><option value="jean">Jean</option></select></div>
+            <div class="form-field"><label>Situação</label><select id="expense-situacao"><option value="pendente">Pendente</option><option value="paga">Paga</option></select></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Salvar</button>
+        </form>
+      </div>
+      <div class="card">
+        <div class="card-header"><h2>Listagem</h2></div>
+        <div class="table-wrapper"><table class="table"><thead><tr><th>Descrição</th><th>Valor</th><th>Resp.</th><th>Situação</th></tr></thead><tbody id="expense-table-body"></tbody></table></div>
+      </div>
+    </section>
+  </main>
+</div>

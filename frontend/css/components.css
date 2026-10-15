@@ -1,1 +1,15 @@
-/* components */
+.card{background:#1f2239;border:1px solid #2a2e4f;border-radius:1rem;padding:1rem}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.kpi-card{background:#1f2239;border:1px solid #2a2e4f;border-radius:1rem;padding:1rem}
+.kpi-value{font-size:1.5rem;font-weight:700}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border:1px solid #2a2e4f;padding:.5rem;text-align:left}
+.btn{padding:.5rem 1rem;border:none;border-radius:.5rem;cursor:pointer}
+.btn-primary{background:#4f9deb;color:#fff}
+.auth-card{background:#1f2239;border:1px solid #2a2e4f;border-radius:1rem;padding:2rem;width:min(420px,100%)}
+.auth-tabs{display:flex;gap:.5rem;margin-bottom:1rem}
+.auth-tab{flex:1;padding:.5rem;border:1px solid #2a2e4f;background:transparent;color:#cbd5e1}
+.auth-tab.active{background:#4f9deb;color:#fff}
+.hidden{display:none}
+.form-field{margin-bottom:.75rem}
+input,select{width:100%;padding:.5rem;background:#16182d;border:1px solid #2a2e4f;border-radius:.5rem;color:#fff}

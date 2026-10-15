@@ -7,8 +7,8 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parent.parent / "backend" / "app"))
 
-from core.database import Base
-import models
+from backend.app.core.database import Base
+from backend.app import models
 
 config = context.config
 if config.config_file_name is not None:

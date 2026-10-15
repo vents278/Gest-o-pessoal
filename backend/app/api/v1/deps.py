@@ -11,7 +11,7 @@ from ...schemas.token import TokenData
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")
 
 def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
-    credentials_exception = HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="N„o autenticado", headers={"WWW-Authenticate": "Bearer"})
+    credentials_exception = HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="N√£o autenticado", headers={"WWW-Authenticate": "Bearer"})
     try:
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
         email: Optional[str] = payload.get("sub")
@@ -27,5 +27,5 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
 
 def get_current_active_user(current_user = Depends(get_current_user)):
     if not current_user.status:
-        raise HTTPException(status_code=400, detail="Usu·rio inativo")
+        raise HTTPException(status_code=400, detail="Usu√°rio inativo")
     return current_user

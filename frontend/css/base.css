@@ -1,1 +1,2 @@
-/* base */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,system-ui,-apple-system,sans-serif;color:#f8fafc}
+body{background:#0f1026;min-height:100vh}

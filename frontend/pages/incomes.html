@@ -1,1 +1,31 @@
-<div></div>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="sidebar-header"><span class="logo">Rita & Jean</span><span class="subtitle">Finance</span></div>
+    <nav class="sidebar-nav">
+      <a class="nav-link" href="#/dashboard">Dashboard</a>
+      <a class="nav-link active" href="#/incomes">Receitas</a>
+      <a class="nav-link" href="#/expenses">Despesas</a>
+      <a class="nav-link" href="#/login" id="logout-link">Sair</a>
+    </nav>
+  </aside>
+  <main class="content-area">
+    <header class="topbar"><div><h2>Receitas</h2></div></header>
+    <section class="page">
+      <div class="card">
+        <div class="card-header"><h2>Nova receita</h2></div>
+        <form id="income-form" class="card-body">
+          <div class="form-grid">
+            <div class="form-field"><label>Descrição</label><input id="income-descricao" required></div>
+            <div class="form-field"><label>Valor (R$)</label><input id="income-valor" type="number" step="0.01" required></div>
+            <div class="form-field"><label>Status</label><select id="income-status"><option value="prevista">Prevista</option><option value="recebida">Recebida</option></select></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Salvar</button>
+        </form>
+      </div>
+      <div class="card">
+        <div class="card-header"><h2>Listagem</h2></div>
+        <div class="table-wrapper"><table class="table"><thead><tr><th>Descrição</th><th>Valor</th><th>Status</th></tr></thead><tbody id="income-table-body"></tbody></table></div>
+      </div>
+    </section>
+  </main>
+</div>

@@ -1,1 +1,42 @@
-<div></div>
+<div class="auth-screen">
+  <div class="auth-card">
+    <div>
+      <h1>Rita & Jean Finance</h1>
+      <p class="text-muted">Gestão financeira pessoal e compartilhada</p>
+    </div>
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="login">Entrar</button>
+      <button class="auth-tab" data-tab="register">Cadastrar</button>
+    </div>
+    <form id="login-form" class="card-body">
+      <div class="form-field">
+        <label for="login-email">E-mail</label>
+        <input id="login-email" type="email" required placeholder="seu@email.com">
+      </div>
+      <div class="form-field">
+        <label for="login-senha">Senha</label>
+        <input id="login-senha" type="password" required placeholder="Sua senha">
+      </div>
+      <button class="btn btn-primary" type="submit">Entrar</button>
+    </form>
+    <form id="register-form" class="card-body hidden">
+      <div class="form-field">
+        <label for="register-nome">Nome completo</label>
+        <input id="register-nome" type="text" required>
+      </div>
+      <div class="form-field">
+        <label for="register-email">E-mail</label>
+        <input id="register-email" type="email" required>
+      </div>
+      <div class="form-field">
+        <label for="register-senha">Senha</label>
+        <input id="register-senha" type="password" required>
+      </div>
+      <div class="form-field">
+        <label for="register-grupo">Nome do grupo familiar</label>
+        <input id="register-grupo" type="text" value="Casa Rita & Jean">
+      </div>
+      <button class="btn btn-primary" type="submit">Criar conta</button>
+    </form>
+  </div>
+</div>
